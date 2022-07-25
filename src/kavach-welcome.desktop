@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Welcome Kavach OS
+Exec=python3 /home/ronin/kavach-welcome/kavach.py
+Icon=/home/ronin/kavach-welcome/imgs/ctlos-welcome.png
+Terminal=false
+StartupNotify=true
