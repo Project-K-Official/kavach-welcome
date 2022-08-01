@@ -9,6 +9,8 @@ class ui_welcomescreen(object):
      ######################### CUSTOM ACTIONS ##########################
     def BugButtonAction(self):
         webbrowser.open("https://github.com/Project-K-Official/")
+    def forumButtonAction(self):
+        webbrowser.open("https://github.com/Project-K-Official/")
     def chatButtonAction(self):
         webbrowser.open("https://github.com/Project-K-Official/")
     def donateButtonAction(self):
@@ -327,9 +329,9 @@ class ui_welcomescreen(object):
         self.donateButton.setText(_translate("WelcomeScreen", "Donate"))
         self.chatButton.setText(_translate("WelcomeScreen", "Chat"))
         self.installationLabel.setText(_translate("WelcomeScreen", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">INSTALL KAVACH:</span></p></body></html>"))
-        self.helperButton.setText(_translate("WelcomeScreen", "Ctlos Helper"))
+        self.helperButton.setText(_translate("WelcomeScreen", "Kavach "))
         self.installButton.setText(_translate("WelcomeScreen", "Install"))
-        self.welcomeLabel.setText(_translate("WelcomeScreen", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600;\">KAVACH OS start</span></p></body></html>"))
+        self.welcomeLabel.setText(_translate("WelcomeScreen", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600;\">KAVACH OS</span></p></body></html>"))
         self.forumsButton.setText(_translate("WelcomeScreen", "Forum"))
         self.launchAtStartCheck.setText(_translate("WelcomeScreen", "AutoStart"))
         self.helpButton.setText(_translate("WelcomeScreen", "Bugs"))

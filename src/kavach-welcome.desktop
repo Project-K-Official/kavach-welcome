@@ -2,7 +2,7 @@
 Type=Application
 Encoding=UTF-8
 Name=Welcome Kavach OS
-Exec=python3 /home/ronin/kavach-welcome/kavach.py
-Icon=/home/ronin/kavach-welcome/imgs/ctlos-welcome.png
+Exec=python3 /usr/bin/kavach-welcome
+Icon=/usr/share/kavach-welcome/img/kavach-welcome.png
 Terminal=false
 StartupNotify=true
