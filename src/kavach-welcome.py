@@ -22,7 +22,7 @@ class ui_welcomescreen(object):
     def helpButtonAction(self):
         webbrowser.open("https://github.com/Project-K-Official/")
     def helperButtonAction(self):
-        subprocess.Popen(["kavach_helper"])
+        subprocess.call("calamares",shell=True)
     def installButtonAction(self):
         subprocess.Popen(["calamares_polkit"])
     def startCheckAction(self):
@@ -329,7 +329,7 @@ class ui_welcomescreen(object):
         self.donateButton.setText(_translate("WelcomeScreen", "Donate"))
         self.chatButton.setText(_translate("WelcomeScreen", "Chat"))
         self.installationLabel.setText(_translate("WelcomeScreen", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">INSTALL KAVACH:</span></p></body></html>"))
-        self.helperButton.setText(_translate("WelcomeScreen", "Kavach "))
+        self.helperButton.setText(_translate("WelcomeScreen", "Install Kavach "))
         self.installButton.setText(_translate("WelcomeScreen", "Install"))
         self.welcomeLabel.setText(_translate("WelcomeScreen", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; font-weight:600;\">KAVACH OS</span></p></body></html>"))
         self.forumsButton.setText(_translate("WelcomeScreen", "Forum"))
