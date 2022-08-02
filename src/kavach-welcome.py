@@ -22,7 +22,7 @@ class ui_welcomescreen(object):
     def helpButtonAction(self):
         webbrowser.open("https://github.com/Project-K-Official/")
     def helperButtonAction(self):
-        subprocess.call("calamares",shell=True)
+        subprocess.call("sudo calamares",shell=True)
     def installButtonAction(self):
         subprocess.Popen(["calamares_polkit"])
     def startCheckAction(self):
@@ -30,6 +30,7 @@ class ui_welcomescreen(object):
             homedir = os.path.expanduser('~')
             autostartfile = os.path.join(homedir, ".config/autostart/kavach-welcome.desktop")
             subprocess.Popen(["cp", "/usr/share/applications/kavach-welcome.desktop", autostartfile])
+            
         else:
             homedir = os.path.expanduser('~')
             autostartfile = os.path.join(homedir, ".config/autostart/kavach-welcome.desktop")
