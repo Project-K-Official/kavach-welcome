@@ -352,8 +352,6 @@ class ui_welcomescreen(object):
 
 if __name__ == "__main__":
     import sys
-    subprocess.call("sudo chmod +x /etc/skel/.config/autostart/addentries.sh", shell=True)
-    subprocess.call("sudo chmod +x /etc/skel/.config/autostart/gethosts.sh", shell=True)
     app = QtWidgets.QApplication(sys.argv)
     WelcomeScreen = QtWidgets.QMainWindow()
     ui = ui_welcomescreen()
