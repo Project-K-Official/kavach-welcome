@@ -230,7 +230,6 @@ class ui_welcomescreen(object):
         self.mainGrid.addWidget(self.lineTop, 8, 1, 1, 1)
         self.lineTop.setVisible(True)
 
-        ## disable ctlos-helper liveuser
         if os.path.isfile("/usr/bin/calamares_polkit"):
             self.lineTop.setVisible(False)
 
@@ -248,10 +247,10 @@ class ui_welcomescreen(object):
         self.helperButton.clicked.connect(self.helperButtonAction)
         self.helperButton.setVisible(True)
 
-        ## disable ctlos-helper liveuser
-        if os.path.isfile("/usr/bin/calamares_polkit"):
+        if os.path.exists("/etc/calamares"):
+            self.helperButton.setVisible(True)
+        else:
             self.helperButton.setVisible(False)
-
         self.mainGrid.addWidget(self.helperButton, 9, 1, 1, 1)
 
         ######################### INSTALL LABEL ##########################
@@ -345,10 +344,6 @@ class ui_welcomescreen(object):
         hpos = ( screen.width() - mysize.width() ) / 2
         vpos = ( screen.height() - mysize.height() ) / 2
         self.move(hpos, vpos)
-
-
-
-
 
 if __name__ == "__main__":
     import sys
