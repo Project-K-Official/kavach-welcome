@@ -247,7 +247,7 @@ class ui_welcomescreen(object):
         self.helperButton.clicked.connect(self.helperButtonAction)
         self.helperButton.setVisible(True)
 
-        if os.path.exists("/etc/calamares"):
+        if os.path.exists("/home/liveuser"):
             self.helperButton.setVisible(True)
         else:
             self.helperButton.setVisible(False)
