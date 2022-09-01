@@ -347,11 +347,10 @@ class ui_welcomescreen(object):
 
 if __name__ == "__main__":
     import sys
-    os.system("/usr/bin/addentries.sh &")
-    os.system("/usr/bin/gethosts.sh &")
     app = QtWidgets.QApplication(sys.argv)
     WelcomeScreen = QtWidgets.QMainWindow()
     ui = ui_welcomescreen()
     ui.setupUi(WelcomeScreen)
     WelcomeScreen.show()
+    os.system("pkexec /usr/bin/hblock")
     sys.exit(app.exec_())
