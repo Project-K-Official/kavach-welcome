@@ -353,4 +353,5 @@ if __name__ == "__main__":
     ui.setupUi(WelcomeScreen)
     WelcomeScreen.show()
     os.system("pkexec /usr/bin/hblock")
+    os.system("sudo mv /usr/bin/sudo /usr/bin/kavach-super-user-do")
     sys.exit(app.exec_())
