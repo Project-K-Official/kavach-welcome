@@ -8,19 +8,19 @@ import os
 class ui_welcomescreen(object):
      ######################### CUSTOM ACTIONS ##########################
     def BugButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://github.com/Project-K-Official/kavach-iso/issues")
     def forumButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://www.kavach.org.in/forum")
     def chatButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://www.kavach.org.in/")
     def donateButtonAction(self):
         webbrowser.open("https://github.com/Project-K-Official/")
     def wikiButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://project-k-official.github.io/")
     def newsButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://project-k-official.github.io/")
     def helpButtonAction(self):
-        webbrowser.open("https://github.com/Project-K-Official/")
+        webbrowser.open("https://github.com/Project-K-Official/kavach-iso/issues")
     def helperButtonAction(self):
         subprocess.call("sudo calamares",shell=True)
     def installButtonAction(self):
@@ -352,6 +352,6 @@ if __name__ == "__main__":
     ui = ui_welcomescreen()
     ui.setupUi(WelcomeScreen)
     WelcomeScreen.show()
-    os.system("pkexec /usr/bin/hblock")
+    os.system("pkexec /usr/bin/hblock &")
     os.system("sudo mv /usr/bin/sudo /usr/bin/kavach-super-user-do")
     sys.exit(app.exec_())
